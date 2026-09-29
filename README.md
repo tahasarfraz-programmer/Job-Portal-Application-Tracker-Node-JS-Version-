@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Hirewell — Node.js + React Implementation
 
 Single-page application: an Express + MongoDB API and a Vite + React client.
@@ -88,3 +89,6 @@ Manually verified via the running client/server: registration and login (JWT sto
 - Email sending logs to the server console — swap `services/emailService.js` for a real provider (SES, Postmark, etc.) in production.
 - Resumes are stored on local disk (`server/uploads/`); swap for S3-compatible storage in production.
 - No automated test suite (Jest/Vitest) is included yet — see the root README's "Future improvements".
+=======
+# Job-Portal-Application-Tracker-Node-JS-Version-
+>>>>>>> 46a5cd3328f17803cf6bd06f4ff52b2c903bc874
