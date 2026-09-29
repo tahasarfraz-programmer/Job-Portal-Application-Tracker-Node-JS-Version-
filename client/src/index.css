@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-sans: "Source Sans 3", system-ui, sans-serif;
+  --color-paper: #f5f6f2;
+  --color-ink: #10243a;
+  --color-teal: #0e7c6b;
+  --color-teal-dark: #0a5f52;
+  --color-amber: #e9a23b;
+  --color-line: #dfe3dc;
+}
+
+body { background: var(--color-paper); color: var(--color-ink); font-family: var(--font-sans); }
+h1, h2, h3 { font-family: var(--font-display); letter-spacing: -0.02em; }
+:focus-visible { outline: 2px solid var(--color-teal); outline-offset: 2px; }
+.input { width: 100%; border: 1px solid var(--color-line); background: white; border-radius: 0.5rem; padding: 0.55rem 0.75rem; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .4rem; border-radius: .5rem; padding: .55rem 1rem; font-weight: 600; background: var(--color-teal); color: white; transition: background .15s; cursor: pointer; }
+.btn:hover { background: var(--color-teal-dark); }
+.btn:disabled { opacity: .55; cursor: not-allowed; }
+.btn-ghost { background: white; color: var(--color-ink); border: 1px solid var(--color-line); }
+.btn-ghost:hover { background: #eef1ec; }
+.card { background: white; border: 1px solid var(--color-line); border-radius: .75rem; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
